@@ -1,0 +1,41 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
+.font {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+/* Submit-Button */
+button.submit-depth {
+  background: #444;
+  border: none;
+  border-radius: 5px;
+  color: #303030;
+  cursor: pointer;
+  font: bold 13px/15px sans-serif;
+  height: 35px;
+  padding: 0;
+  text-shadow: 0 1px 1px hsla(0, 0%, 100%, 0.25),
+    0 -1px 1px hsla(0, 0%, 0%, 0.75);
+  width: 50%;
+}
+
+button.submit-depth:hover,
+button.submit-depth:focus {
+  color: #fa0606;
+  text-shadow: 0 0 20px hsla(240, 75%, 75%, 0.5),
+    0 1px 1px hsla(0, 0%, 100%, 0.25), 0 -1px 1px hsla(0, 0%, 0%, 0.75);
+}

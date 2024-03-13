@@ -1,0 +1,8 @@
+.card {
+    transition: transform 0.5s ease;
+  }
+  
+  .flipped {
+    transform: rotateY(180deg);
+  }
+  

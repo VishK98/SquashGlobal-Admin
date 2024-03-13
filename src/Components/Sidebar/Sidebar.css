@@ -1,0 +1,96 @@
+.sidebar {
+    /* width: 280px; */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #03045e;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #212529;
+    transition: background-color 0.3s;
+}
+
+.sidebar .brand {
+    padding-left: 15px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 15px;
+    padding-top: 10px;
+
+}
+
+.btn-toggle-nav {
+    padding-left: 0;
+    list-style: none;
+}
+
+.btn-toggle-nav li {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn-toggle-nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #212529;
+    border: none;
+    position: relative;
+}
+
+.btn-toggle-nav a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #dee2e6;
+    transition: width 1s ease;
+    margin-left: 15px;
+}
+
+.btn-toggle-nav a:hover::after {
+    margin-left: 15px;
+    width: 92%;
+    background-color: #03045e;
+}
+
+.buttons {
+    height: 40px;
+    width: auto;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 17px;
+}
+.center{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 110px;
+}
+.buttons.active {
+    border-bottom: 2px solid #03045e; /* Add your desired bottom border style here */
+  }
+
+  .logout-btn{
+    height: 45px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #03045e;
+    margin-top: 350px;
+    margin-left: 90px;
+    color: #dee2e6;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 18px;
+  }
