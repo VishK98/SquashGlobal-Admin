@@ -51,7 +51,7 @@ function Login() {
           <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
             <form className="mt-3" onSubmit={handleLogin}>
               <label htmlFor="username">
-                username address
+                Enter username
                 <sup
                   style={{
                     color: "red",
